@@ -5,7 +5,7 @@ import (
 )
 //判断输入的字符是否数回文。回文的意思就如 abba  aba这样 前后两个对应对称位置的值相同
 func process(str string) bool {
-	for i:=0;i<len(str);i++ {
+	for i:=0;i<len(str);i++ { //这里对中文无效
 		if(i == len(str)/2){
 			break
 		}
@@ -16,11 +16,26 @@ func process(str string) bool {
 	}
 	return true
 }
+//这个方法适用中文加英文
+func check(str string) bool {
+	t :=[]rune(str)//把输入的参数转变成一个一个字符形式，无论是中文还是英文 字符长度多少
+	length := len(t)
+	for i,_ := range t {//通过range来获取一个字符 
+		if(i == length/2){
+			break
+		}
+		last := length - i - 1
+		if t[i] != t[last] {
+			return false
+		}
+	}
+	return true
+}
 
 func main() {
 	var str string
 	fmt.Scanf("%s",&str)
-	if process(str) {
+	if check(str) {
 		fmt.Println("yes")
 	}else {
 		fmt.Println("no")
