@@ -5,9 +5,9 @@
 
 day1 代码包括:
 > go环境配置 \<br>
-> Hello World
-> 并发演示
-> package基本概念
+ Hello World
+ 并发演示
+ package基本概念
 
 ##### day2 代码包括:
 ###### 基本类型
