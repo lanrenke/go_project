@@ -4,7 +4,7 @@
 开发环境是mac
 
 day1 代码包括:
->go环境配置
+>go环境配置\</br>
 >Hello World
 >并发演示
 >package基本概念
