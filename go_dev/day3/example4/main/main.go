@@ -15,7 +15,7 @@ func main(){
 	
 	var result = 0
 	for i:=0;i<len(str);i++ {
-		num := int(str[i] -'0'） //这里是用对应获取到到字符到ascii码减去数字 0 的 ascii 码来还原当前获取到的字是什么数字
+		num := int(str[i] - '0') //这里是用对应获取到到字符到ascii码减去数字 0 的 ascii 码来还原当前获取到的字是什么数字
 		result += num*num*num   //ascii码数连续的
 	}
 	

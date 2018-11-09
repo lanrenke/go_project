@@ -9,6 +9,7 @@ func reverse(str string) string {
 	var result string
 	strLen := len(str)
 	for i:=0;i<strLen;i++ {
+		//fmt.Println(fmt.Sprintf("%c",str[strLen - i -1]))
 		result = result + fmt.Sprintf("%c",str[strLen - i -1])//str[xx]当xx是数字到时候 str[xx]返回到是二进制码，通过sprintf来转换为对应到单词，这样就可以拼接起来了
 	}
 	return result
