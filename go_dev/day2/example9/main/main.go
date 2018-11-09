@@ -29,7 +29,7 @@ func main(){
 	first := 100
 	second := 200
 	//swap(&first,&second)//注意 传地址要使用 & 符号，这是传地址修改对应地址值的方法
-	first,second = swap1(first,second)//这里是返回值方法，直接修改当前参数但值
+	first,second = swap1(first,second)//这里是返回值方法，直接修改当前参数的值
 	//first,second = second,first 这个是方法最直接，直接交换即可
 	fmt.Println("first=",first)
 	fmt.Println("second=",second)
